@@ -1,0 +1,11 @@
+.page-header {
+	& {
+		height: 15.875rem;
+		display: inline-block;
+		width: 100%;
+	}
+
+	&.-home {
+		background: url('../images/header.jpg') center center /cover no-repeat;
+	}
+}

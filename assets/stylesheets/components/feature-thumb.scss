@@ -1,0 +1,43 @@
+.feature-thumb {
+	& {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		margin-top: 0.5rem;
+		box-sizing: border-box;
+
+		@media #{$tablet} { grid-template-columns: repeat(2, 1fr) }
+	}
+
+	> .item {
+		& {
+			padding: 0.4rem;
+
+			@media #{$tablet} {
+				max-width: 232px;
+    			margin: 0 auto;
+			}
+		}
+
+		> .head {
+			font-size: map-get($sizes, base);
+			font-weight: map-get($font-weight, sm);
+			width: 100%;
+			padding: 0.5rem;
+			box-sizing: border-box;
+			margin-bottom: 0.75rem;
+		}
+
+		&:first-child > .head{ background-color: #FF8E04}
+
+		&:nth-child(2) > .head{ background-color: #92A609}
+
+		&:nth-child(3) > .head{ background-color: #BB0154}		
+
+		&:last-child > .head{ background-color: #0197B8}	
+
+		> .image {
+			width: 100%;
+			height: 4rem;
+		}
+	}
+}

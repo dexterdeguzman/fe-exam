@@ -1,0 +1,15 @@
+.page-content {
+	& { 
+		grid-area: content;
+		width: 100% 
+	}
+
+	> .head {
+		color: #FF9900;
+		font-size: map-get($sizes, bg);
+		font-weight: map-get($font-weight, md);
+		margin: 1rem 0;
+
+		@media #{$tablet} { text-align: center;}
+	}
+}

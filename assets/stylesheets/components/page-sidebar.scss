@@ -1,0 +1,49 @@
+.page-sidebar {
+	& { grid-area: sidebar}
+
+	> .head {
+		background: linear-gradient(#880a0a, #ff0a0a);
+		font-weight: map-get($font-weight, bld);
+		padding: 0.9375rem 1.125rem;
+		font-size: 13px;
+	}
+
+	> .sidebarList {
+		& { 
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+
+		> .item {
+			& {
+				border-bottom: 1px solid rgba(255,255,255,0.2);
+				padding: 0.725rem 0;
+				display: flex;
+			}
+
+			> .link {
+				& {
+					color: map-get($colors, white);
+					text-decoration: none;
+					position: relative;
+					font-weight: map-get($font-weight, sm);
+					margin-left: 2.5rem;	
+					transition: all 0.22s $animation-type;				
+				}
+
+				&:hover { color: #FFCC02}
+
+				&:before {
+					content: "";
+					background: url('../images/link.jpg') no-repeat;
+					position: absolute;
+					height: 15px;
+					width: 15px;
+					left: -26px;
+					top: 0;
+				}
+
+			}
+		}
+	}
+}

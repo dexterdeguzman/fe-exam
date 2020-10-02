@@ -1,0 +1,11 @@
+.foot-note {
+	& {
+		text-align: center;
+		padding: 1rem 0;
+		font-size: map-get($sizes, ls);
+		font-weight: map-get($font-weight, sm);	
+	}
+
+	> .link { color: #AEEB6D}
+
+}

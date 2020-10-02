@@ -1,0 +1,38 @@
+.brand-title {
+	& { 
+		display: block;
+		color: map-deep-get($colors, black, solid);
+	}
+
+	&.-head {
+		font-size: map-get($sizes, lg);
+		margin-top: 0.7rem;
+		margin-left: 7.8125rem;
+		font-weight: map-get($font-weight, md);
+		margin-bottom: 0;
+
+		@media #{$tablet}{
+			margin-left: 0;
+			text-align: center;
+			background: rgba(0,0,0,0.5);
+			color: #FFF;
+			padding: 16px 0;
+			margin-top: 5rem;
+		}
+	}
+
+	&.-subhead {
+		font-size: map-get($sizes, ls);
+		font-weight: map-get($font-weight, rg);
+		margin-left: 7.8125rem;
+		margin-top: 0.25rem;
+
+		@media #{$tablet} {
+			background: rgba(0,0,0,0.5);
+			margin: 0;
+			text-align: center;
+			color: #fff;
+			padding-bottom: 16px;
+		}
+	}
+}

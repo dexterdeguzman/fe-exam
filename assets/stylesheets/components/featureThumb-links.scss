@@ -1,0 +1,32 @@
+.featureThumb-links {
+	& {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+	}
+
+	> .link {
+		& {
+			margin: 0 auto;
+			padding-left: 1.5rem;
+			color: #FDFD67;
+			text-decoration: none;
+			font-weight: map-get($font-weight, sm);
+			position: relative;
+			margin: 12px 0;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&:before {
+			content: "";
+			background: url('../images/star-bult.jpg') center center no-repeat;
+			position: absolute;
+			height: 19px;
+			width: 19px;
+			left: 0;
+			top: -3px;
+		}
+	}
+}

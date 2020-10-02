@@ -1,0 +1,29 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  & {
+    font-family: $main-font;
+    font-weight: map-get($font-weight, rg);
+    font-size: map-get($sizes, base);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    color: map-get($colors, white);
+    background-color: map-deep-get($colors, black, solid);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+textarea { resize: none }
+
+p { line-height: 1.6em }
